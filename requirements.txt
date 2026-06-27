@@ -1,0 +1,9 @@
+# The ft_mcp stdio server core has ZERO runtime dependencies — it runs on the
+# Python standard library alone (asyncio, json, sys, logging, hashlib, ...).
+#
+# The only optional dependency is aiohttp, required exclusively by the bonus
+# Streamable-HTTP + SSE transport (`ft_mcp --http`):
+aiohttp>=3.9
+
+# Test suite:
+pytest>=7.0
